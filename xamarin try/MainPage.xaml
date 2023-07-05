@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_2048.MainPage" >
+
+
+    <RelativeLayout x:Name="docWrapp" >
+        <Grid x:Name="mainGrid" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            
+
+                
+
+            <AbsoluteLayout Grid.Row="0" Grid.Column="0" x:Name="gameWrapp">
+                <SwipeView  x:Name="swipeWrapp">
+                    <SwipeView.RightItems>
+                        <SwipeItems>
+                            <SwipeItem  />
+                        </SwipeItems>
+                    </SwipeView.RightItems>
+                    <SwipeView.LeftItems >
+                        <SwipeItems>
+                            <SwipeItem />
+                        </SwipeItems>
+                    </SwipeView.LeftItems>
+                    <SwipeView.TopItems >
+                        <SwipeItems>
+                            <SwipeItem />
+                        </SwipeItems>
+                    </SwipeView.TopItems>
+                    <SwipeView.BottomItems >
+                        <SwipeItems>
+                            <SwipeItem />
+                        </SwipeItems>
+                    </SwipeView.BottomItems>
+                    <Grid>
+                    </Grid>
+                </SwipeView>
+            </AbsoluteLayout>
+
+            <AbsoluteLayout Grid.Row="0" Grid.Column="0" x:Name="menuWrapp">
+            </AbsoluteLayout>
+
+
+            
+
+        </Grid>
+        
+        
+        
+        
+        
+        <Grid x:Name="animGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+        </Grid> 
+    </RelativeLayout>
+
+</ContentPage>
